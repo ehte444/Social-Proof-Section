@@ -1,0 +1,213 @@
+/* Basics and Utilities */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .relative{
+  position: relative;
+} */
+
+/* Body */
+body{
+  font-family: 'Spartan',
+  sans-serif;
+  font-size: 15px;
+}
+
+/* Container */
+.container{
+  margin: 100px auto;
+  width: 70rem;
+}
+
+/* Upper Section */
+.container .upper-head{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.container .upper-head .content{
+  width: 40%;
+}
+
+.container .upper-head .content h1{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: hsl(300, 43%, 22%);
+}
+
+.container .upper-head .content p{
+  line-height: 2;
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+}
+
+.container .upper-head .plates{
+  width: 45%;
+  margin-top: .7rem;
+}
+
+.container .upper-head .plates .plate{
+  padding: 1rem;
+  width: 85%;
+  font-size: 13px;
+  text-align: center;
+  border-radius: .3rem;
+  background-color: hsl(300, 24%, 96%);
+}
+
+.container .upper-head .plates .plate .stars{
+  display: inline-block;
+  margin-right: .6rem;
+  height: .3rem;
+}
+
+.container .upper-head .plates .plate p{
+  display: inline-block;
+  font-weight: 700;
+}
+
+/* Lower Part */
+.lower-head .card-container{
+  display: flex;
+}
+
+.lower-head .card-container .card{
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem;
+  border-radius: .5rem;
+  width: 31%;
+  height: 16rem;
+  margin-left: 1.4rem;
+}
+
+
+.lower-head .card-container .card .profile .img-container img{
+  width: 100%;
+}
+
+.lower-head .card-container .card .profile .img-container{
+  width: 3rem;
+  border-radius: 100%;
+  overflow: hidden;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.lower-head .card-container .card .profile{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.lower-head .card-container .card .profile .person .name{
+  color: #f4f4f4;
+  font-weight: 700;
+  margin-bottom: .2rem;
+}
+
+.lower-head .card-container .card .profile .person .designation{
+  color: hsl(333, 80%, 67%);
+  opacity: 0.7;
+}
+
+.lower-head .card-container .card .content p{
+  line-height: 1.7;
+  font-size: .8rem;
+  color: #f4f4f4;
+}
+
+
+/* Responsiveness */
+/* Desktop */
+@media(min-width:1050px){
+  .container .upper-head .plates .plate:nth-child(2) {
+    /* position: absolute; */
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+  }
+
+  .container .upper-head .plates .plate:nth-child(3) {
+    margin-top: 1.5rem;
+    margin-left: 7rem;
+  }
+
+  .lower-head .card-container .card:nth-child(2) {
+    margin-top: 1rem;
+  }
+
+  .lower-head .card-container .card:nth-child(3) {
+    margin-top: 2rem;
+  }
+}
+
+@media(max-width: 1050px){
+
+  .container .upper-head{
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container .upper-head .content{
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  
+  .container .upper-head .content h1{
+    /* font-size: 5rem; */
+    /* margin-bottom: 2.5rem; */
+  }
+
+  .container .upper-head .content p{
+    font-size: 2.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  
+  .container .upper-head .plates{
+    width: 80%;
+    height: 50%;
+  }
+  
+  .container .upper-head .plates .plate{
+    width: 100%;
+    height: 3rem;
+  }
+
+  .container .upper-head .plates .plate .stars{
+    display: block;
+  }
+
+  .container .upper-head .plates .plate p{
+    display: block;
+  }
+
+  .lower-head .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lower-head .card-container .card{
+    margin: 2rem 0;
+    height: auto;
+    width: auto:
+  }
+
+  .lower-head .card-container .card .profile .img-container{
+    width: 30%;
+    height: 30%;
+  }
+
+  .lower-head .card-container .card .profile .name{
+    font-size: 2rem;
+  }
+
+
+}
