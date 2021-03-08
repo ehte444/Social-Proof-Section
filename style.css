@@ -59,7 +59,7 @@ body{
 .container .upper-head .plates .plate .stars{
   display: inline-block;
   margin-right: .6rem;
-  height: .3rem;
+
 }
 
 .container .upper-head .plates .plate p{
@@ -122,7 +122,6 @@ body{
 /* Desktop */
 @media(min-width:1050px){
   .container .upper-head .plates .plate:nth-child(2) {
-    /* position: absolute; */
     margin-top: 1.5rem;
     margin-left: 3.5rem;
   }
@@ -178,17 +177,14 @@ body{
   
   .container .upper-head .plates .plate{
     width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* height: 3rem; */
+    margin-bottom: .8rem;
   }
 
   .container .upper-head .plates .plate .stars{
-    display: block;
-  }
-
-  .container .upper-head .plates .plate p{
-    display: block;
+    margin-bottom: .3rem;
   }
 
   .lower-head .card-container {
